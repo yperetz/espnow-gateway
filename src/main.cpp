@@ -1,20 +1,19 @@
+#include "gateway_manager.h"
+
 #include "esp_log.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 
+#define MODULE_TAG "GatewayMain"
+
 namespace Gateway {
 extern "C" void app_main();
 void app_main() {
+    GatewayManager &gatewayManager = GatewayManager::GetInstance();
+    (void)gatewayManager;  // Suppresses unused variable
+    ESP_LOGI(MODULE_TAG, "GatewayManager created");
 
-  static const char *TAG = "MAIN";
-  for (;;) {
-    ESP_LOGI("MAIN", "[APP] IDF version: %s", esp_get_idf_version());
-    ESP_LOGD(TAG, "HELLO WORLD D");
-    ESP_LOGI(TAG, "HELLO WORLD I");
-    ESP_LOGW(TAG, "HELLO WORLD W");
-    ESP_LOGE(TAG, "HELLO WORLD E");
-    vTaskDelay(100);
-  }
+    vTaskSuspend(NULL);
 }
 
 }  // namespace Gateway

@@ -1,0 +1,33 @@
+{
+    "C_Cpp.default.compilerPath": "/home/yp/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-gcc",
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#4f634d",
+        "activityBar.background": "#4f634d",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#202660",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "commandCenter.border": "#e7e7e799",
+        "sash.hoverBorder": "#4f634d",
+        "statusBar.background": "#384637",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#4f634d",
+        "statusBarItem.remoteBackground": "#384637",
+        "statusBarItem.remoteForeground": "#e7e7e7",
+        "titleBar.activeBackground": "#384637",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#38463799",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.color": "#384637",
+    "files.associations": {
+        "string": "cpp",
+        "*.tcc": "cpp",
+        "unordered_map": "cpp",
+        "fstream": "cpp",
+        "istream": "cpp",
+        "numeric": "cpp",
+        "ostream": "cpp",
+        "sstream": "cpp"
+    }
+}
